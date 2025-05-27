@@ -1,2 +1,2 @@
 # fundamentos-python
-Repositorio de Rodroigo Alberto Lazo Guifarro para el curso de fundamentos de programación
+Repositorio de Rodrigo Alberto Lazo Guifarro para el curso de fundamentos de programación
