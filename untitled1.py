@@ -32,10 +32,15 @@ Autor:        Rodrigo Lazo
 Fecha:        2025-05-14
 Estado:       [ Terminado ]
 '''
-nombre = input("Ingresa tu nombre: ")
+nombre = input("Ingresa tus nombres: ")
+nombres = nombre.split()
+primer_nombre = nombres[0]
 apellido = input("ingrese su apellido: ")
-correo = (f"{nombre}.{apellido}@keyinstitute.edu.sv")
-print(correo)
+apellidos = apellido.split()
+primer_apellido = apellidos[0]
+
+correo = (f"{primer_nombre}.{primer_apellido}@keyinstitute.edu.sv")
+print(correo.lower())
 
 '''
 Clase:        Clase 2
@@ -48,13 +53,23 @@ Fecha:        2025-05-16
 Estado:       [ Terminado ]
 '''
 contrasena = input("Ingrese su clave: ")
-if len(contrasena)>= 8:
-  for i in contrasena:
-    if i.isdigit or i.isupper:
-      True
-  print("Contraseña segura")
+
+if len(contrasena) >= 8:
+    for i in contrasena:
+        if i.isupper():
+            si_hay_mayuscula = True
+            if si_hay_mayuscula:
+                for c in contrasena:
+                    if c.isdigit():
+                        print("Contraseña segura")
+                        break
+                else:
+                    print("Contraseña no segura")
+            break
+    else:
+        print("Contraseña no segura")
 else:
-  print("Contraseña no segura")
+    print("Contraseña no segura")
 
 '''
 Clase:        Clase 2
